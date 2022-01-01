@@ -1,0 +1,103 @@
+.feature {
+  .feature__title {
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $primary-dark;
+  }
+  .feature__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .feature__item {
+      width: 30%;
+      max-width: 30%;
+      box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+      background-color: #f5f9fe;
+      border: none;
+      padding: 30px;
+      margin-bottom: 30px;
+      margin: 15px;
+      border-radius: 4px;
+
+      @include Responsive(XS) {
+        width: 90%;
+        max-width: 90%;
+      }
+
+      @include Responsive(SM) {
+        width: 90%;
+        max-width: 90%;
+      }
+
+      @include Responsive(MD) {
+        width: 90%;
+        max-width: 90%;
+      }
+
+      @include Responsive(LG) {
+        width: 45%;
+        max-width: 45%;
+      }
+
+      .feature__img {
+        width: 100%;
+        box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+        border-radius: 8px;
+      }
+      .feature__discription {
+        padding: 17px;
+        .feature__line-1 {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 7px;
+          .feature__name {
+            font-size: 20px;
+            font-weight: 700;
+            color: $primary-dark;
+          }
+          .feature__price {
+            font-size: 20px;
+            font-weight: 700;
+            color: $primary-dark;
+          }
+        }
+        .feature__line-2 {
+          margin-bottom: 20px;
+          .feature_category {
+            font-size: 14px;
+            font-weight: 400;
+            color: $primary-dark;
+          }
+        }
+        .feature__line-3 {
+          display: flex;
+          justify-content: space-between;
+          .feature__rating {
+            color: #f9d412;
+            i {
+              font-size: 1.4rem;
+            }
+          }
+          .feature__btn {
+            background: #f5f9fe;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 4px;
+            letter-spacing: 0.03rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $primary-main;
+            box-shadow: 2px 2px 4px #e2ebfc, -2px -2px 4px #fff;
+            transition: 0.5s;
+            &:hover {
+              cursor: pointer;
+              box-shadow: inset 1px 1px 3px #e2ebfc, inset -2px -2px 5px #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

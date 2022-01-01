@@ -1,0 +1,116 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #f5f9fe;
+  box-shadow: 0 2px 4px #e2ebfc;
+  padding: 10px;
+  max-width: 1920px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__logo {
+      a {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $primary-main;
+      }
+    }
+    .header__nav {
+      .header__nav-list {
+        display: flex;
+
+        @include Responsive(XS) {
+          display: none;
+        }
+
+        @include Responsive(SM) {
+          display: none;
+        }
+
+        @include Responsive(MD) {
+          display: none;
+        }
+
+        @include Responsive(LG) {
+          display: none;
+        }
+        .header__nav-item {
+          padding: 25px;
+          a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $primary-dark;
+            &::after {
+              content: "";
+              width: 100%;
+              height: 2px;
+              display: block;
+              background-color: $primary-main;
+              transform: scale(0);
+              transition: all 0.2s;
+            }
+          }
+          &:hover {
+            a {
+              color: $primary-main;
+              &::after {
+                transform: scale(1);
+              }
+            }
+          }
+        }
+        .header__nav-item--active {
+          a {
+            color: #2a73dd;
+            &::after {
+              content: "";
+              width: 100%;
+              height: 2px;
+              display: block;
+              background-color: #2a73dd;
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+    .header__menu-btn {
+      display: none;
+      font-size: 2rem;
+      color: $primary-dark;
+      position: relative;
+      font-weight: 900;
+
+      @include Responsive(SM) {
+        display: block;
+      }
+
+      @include Responsive(MD) {
+        display: block;
+      }
+
+      @include Responsive(LG) {
+        display: block;
+      }
+
+      // .header__menu-hidden {
+      //   display: block;
+      //   position: absolute;
+      //   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;       
+      //   background-color: #f5f9fe;   
+      //   left: -90px;
+      //   top: 30px;
+      //   .header__nav-item {
+      //     padding: 5px;
+      //     a {
+      //       font-size: 1.4rem;
+      //       font-weight: 600;
+      //       color: $primary-dark;
+      //       padding: 10px 10px;
+      //     }
+      //   }
+      // }
+    }
+  }
+}

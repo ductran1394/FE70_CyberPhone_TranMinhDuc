@@ -1,0 +1,27 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+  font-size: 10px; // 1rem = 10px
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0px auto;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0px auto;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+.mr-5 {
+  margin-right: 5px !important;
+}
+
+.section {
+  padding: 100px 0;
+}

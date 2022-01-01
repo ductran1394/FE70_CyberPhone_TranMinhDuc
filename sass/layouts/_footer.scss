@@ -1,0 +1,29 @@
+.footer {
+  background-color: $primary-main;
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    .footer__left {
+      color: #fff;
+      font-size: 1.4rem;
+      padding: 8px 0px;
+    }
+    .footer__right {
+      .footer__list {
+        display: flex;
+        li {
+          color: #fff;
+          font-size: 1.4rem;
+          font-weight: 600;
+          padding: 8px 16px;
+          transition: all 0.2s;
+          &:hover {
+            opacity: 0.75;
+          }
+        }
+      }
+    }
+  }
+}
+
